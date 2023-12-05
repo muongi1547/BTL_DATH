@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:text="Date time"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStockName"
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:text="Stock name"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewDateTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/textViewBuySell"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="BUY/SELL"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textViewStockName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/textViewVolumn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Volumn"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textViewBuySell"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="89dp"
+        android:layout_height="50dp"
+        android:text="Price"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewVolumn"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

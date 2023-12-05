@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="#5d6d7e">
+
+    <TextView
+        android:id="@+id/popupBuy"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Volumn:"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/popupBuy"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:textSize="30sp"
+        android:text="Price:" />
+
+    <Button
+        android:id="@+id/buttonBuy_Sell"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="91dp"
+        android:text="Button" />
+
+    <EditText
+        android:id="@+id/editTextVolumn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/popupBuy"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editTextVolumn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/textView19"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+
+</RelativeLayout>
